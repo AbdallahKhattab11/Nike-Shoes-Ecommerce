@@ -1,16 +1,69 @@
-# React + Vite
+# Nike Shoes Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive ecommerce website for Nike shoes, rebuilt from legacy HTML/CSS using **React** and **Tailwind CSS**. This project features a high-performance UI, smooth animations, and a fully functional shopping cart with persistent state.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** [React](https://react.dev/) (Vite)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management:** React Context API
+- **Persistence:** LocalStorage
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design:** Mobile-first approach ensuring a seamless experience across all devices (Mobile, Tablet, Desktop).
+- **Shopping Cart:**
+  - Add, remove, and update item quantities.
+  - Real-time cart total calculation.
+  - **Persistence:** Cart state is saved to `localStorage`, so items remain after page refreshes.
+- **Modern UI/UX:**
+  - Glassmorphism effects and gradient accents.
+  - Smooth scroll and reveal animations using Framer Motion.
+  - Interactive hover states and product filtering.
+- **Component-Based Architecture:** Clean, reusable React components (`ProductCard`, `Navbar`, `Footer`, etc.).
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/   # Reusable UI components (Navbar, Cart, Footer, ProductCard)
+├── sections/     # Landing page sections (Hero, PopularProducts, AboutUs, etc.)
+├── context/      # Global state management (CartContext)
+├── constants/    # Static data (Products, Reviews, NavLinks)
+├── assets/       # Images and media files
+└── index.css     # Tailwind v4 configuration and global styles
+```
+
+## 🛠️ Getting Started
+
+Follow these steps to run the project locally:
+
+1.  **Navigate to the project directory:**
+
+    ```bash
+    cd my-app
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📝 Notes
+
+- The project uses **Tailwind CSS v4**, utilizing the new CSS-first configuration approach in `src/index.css`.
+- All product data is currently mocked in `src/constants/index.js` for demonstration purposes but structured to be easily replacable with an API response.
