@@ -24,7 +24,7 @@ const Subscribe = () => {
             className="w-full p-4 rounded-full sm:rounded-l-full sm:rounded-r-none outline-none border-none text-black px-6"
             required
           />
-          <button className="bg-gradient-to-r from-accent-purple to-accent-pink text-white px-8 py-4 rounded-full sm:rounded-l-none sm:rounded-r-full font-bold uppercase tracking-wider hover:opacity-90 transition-opacity whitespace-nowrap">
+          <button className="bg-linear-to-r from-accent-purple to-accent-pink text-white px-8 py-4 rounded-full sm:rounded-l-none sm:rounded-r-full font-bold uppercase tracking-wider hover:opacity-90 transition-opacity whitespace-nowrap">
             Subscribe
           </button>
         </form>

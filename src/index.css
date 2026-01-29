@@ -14,6 +14,12 @@
 
   --image-gra-primary: linear-gradient(45deg, #c32bfb, #f818d2);
   --image-gra-white: linear-gradient(45deg, #fff, #dedede);
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -36,9 +42,9 @@
   cursor: pointer;
   border: none;
   outline: none;
-}
 
-@utility btn-primary:hover {
-  background-image: var(--image-gra-white);
-  color: var(--color-dark-bg);
+  &:hover {
+    background-image: var(--image-gra-white);
+    color: var(--color-dark-bg);
+  }
 }

@@ -15,7 +15,7 @@ const Cart = () => {
   if (!isCartOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100]">
+    <div className="fixed inset-0 z-100">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
@@ -121,7 +121,7 @@ const Cart = () => {
               </span>
             </div>
 
-            <button className="w-full h-12 bg-gradient-to-r from-accent-purple to-accent-pink rounded-lg text-white font-semibold tracking-wide shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-shadow mb-3 uppercase">
+            <button className="w-full h-12 bg-linear-to-r from-accent-purple to-accent-pink rounded-lg text-white font-semibold tracking-wide shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-shadow mb-3 uppercase">
               Checkout Now
             </button>
 
