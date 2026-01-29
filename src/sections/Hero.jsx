@@ -58,6 +58,7 @@ const Hero = () => {
               src="/assets/hero/hero.png"
               alt="Nike Shoe Hero"
               className="w-full h-auto object-contain drop-shadow-2xl rotate-[-15deg] hover:rotate-0 transition-transform duration-500"
+              fetchPriority="high"
             />
           </motion.div>
 

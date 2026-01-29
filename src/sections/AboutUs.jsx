@@ -20,6 +20,7 @@ const AboutUs = () => {
               src="/assets/about/about-img.png"
               alt="About Nike"
               className="w-full max-w-[500px] object-cover drop-shadow-2xl z-10 relative hover:scale-105 transition-transform duration-500"
+              loading="lazy"
             />
 
             {/* Discount Card */}

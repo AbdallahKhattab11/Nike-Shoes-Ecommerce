@@ -8,6 +8,7 @@ const ReviewCard = ({ review }) => {
           src={review.image}
           alt={review.name}
           className="w-full h-full object-cover rounded-full"
+          loading="lazy"
         />
       </div>
 
